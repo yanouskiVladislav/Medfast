@@ -1,0 +1,849 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8603D8E52B03C21600D124E6 /* MedfastApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8603D8E42B03C21600D124E6 /* MedfastApp.swift */; };
+		8603D8E72B03C21600D124E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8603D8E62B03C21600D124E6 /* ContentView.swift */; };
+		8603D8E92B03C21700D124E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8603D8E82B03C21700D124E6 /* Assets.xcassets */; };
+		8603D8EC2B03C21700D124E6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8603D8EB2B03C21700D124E6 /* Preview Assets.xcassets */; };
+		8603D8F62B03C21700D124E6 /* MedfastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8603D8F52B03C21700D124E6 /* MedfastTests.swift */; };
+		8603D9002B03C21800D124E6 /* MedfastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8603D8FF2B03C21800D124E6 /* MedfastUITests.swift */; };
+		8603D9022B03C21800D124E6 /* MedfastUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8603D9012B03C21800D124E6 /* MedfastUITestsLaunchTests.swift */; };
+		8603D9192B04E4F800D124E6 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8603D9182B04E4F800D124E6 /* Colors.swift */; };
+		8603D91C2B04F7A100D124E6 /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8603D91B2B04F7A100D124E6 /* Texts.swift */; };
+		8603D9212B052B6100D124E6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8603D9232B052B6100D124E6 /* Localizable.strings */; };
+		861D0B9F2B23226100B6D62E /* AbstractButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861D0B9E2B23226100B6D62E /* AbstractButton.swift */; };
+		861D0BA12B235DE000B6D62E /* AbstractButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861D0BA02B235DE000B6D62E /* AbstractButtonViewModel.swift */; };
+		864C4E0E2B19FB0000F3AAB2 /* AnimatedLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864C4E0D2B19FB0000F3AAB2 /* AnimatedLogo.swift */; };
+		864C4E112B1A036200F3AAB2 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864C4E102B1A036200F3AAB2 /* LoaderView.swift */; };
+		8655FC962B20B80200FA0033 /* ValidatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8655FC952B20B80200FA0033 /* ValidatorProtocol.swift */; };
+		8655FC982B20BB0C00FA0033 /* PasswordValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8655FC972B20BB0C00FA0033 /* PasswordValidator.swift */; };
+		8682CDC32B0E1CF90096494E /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8682CDC22B0E1CF90096494E /* EmailValidator.swift */; };
+		869580A12B0FAD3600999FA2 /* AbstractTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869580A02B0FAD3600999FA2 /* AbstractTextField.swift */; };
+		869580A52B0FAD5B00999FA2 /* AbstractTextFieldViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869580A42B0FAD5B00999FA2 /* AbstractTextFieldViewModelProtocol.swift */; };
+		869580A72B0FAD7A00999FA2 /* AbstractTextFieldStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869580A62B0FAD7A00999FA2 /* AbstractTextFieldStyles.swift */; };
+		869580AB2B0FAE9700999FA2 /* ViewModelWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869580AA2B0FAE9700999FA2 /* ViewModelWrapper.swift */; };
+		869580AD2B0FAF3400999FA2 /* AbstractTextFieldImagesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869580AC2B0FAF3400999FA2 /* AbstractTextFieldImagesModel.swift */; };
+		86A30C1A2B06A5D100D54984 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A30C192B06A5D100D54984 /* LoginViewModel.swift */; };
+		86A30C1C2B06A75300D54984 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A30C1B2B06A75300D54984 /* LoginView.swift */; };
+		86A30C212B06A93200D54984 /* MainButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A30C202B06A93200D54984 /* MainButtonType.swift */; };
+		86A30C232B06AC8A00D54984 /* MainButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A30C222B06AC8A00D54984 /* MainButtonStyle.swift */; };
+		86B12ECC2B1E08E400ED74BA /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B12ECB2B1E08E400ED74BA /* Styles.swift */; };
+		86D3F7072B165557002D9924 /* AbstractTextFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D3F7062B165557002D9924 /* AbstractTextFieldViewModel.swift */; };
+		86E6EFC52B27048A004BA8FF /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E6EFC42B27048A004BA8FF /* OnboardingView.swift */; };
+		86E6EFC72B271AFB004BA8FF /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E6EFC62B271AFB004BA8FF /* OnboardingViewModel.swift */; };
+		86EFCECD2B06129400BF5A84 /* Font+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EFCECC2B06129400BF5A84 /* Font+Extensions.swift */; };
+		86EFCED02B0614C800BF5A84 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EFCECF2B0614C800BF5A84 /* Images.swift */; };
+		86FD6C602B28E70D00344EF5 /* PageIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FD6C5F2B28E70D00344EF5 /* PageIndicatorView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8603D8F22B03C21700D124E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8603D8D92B03C21600D124E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8603D8E02B03C21600D124E6;
+			remoteInfo = Medfast;
+		};
+		8603D8FC2B03C21800D124E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8603D8D92B03C21600D124E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8603D8E02B03C21600D124E6;
+			remoteInfo = Medfast;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8603D8E12B03C21600D124E6 /* Medfast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Medfast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8603D8E42B03C21600D124E6 /* MedfastApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedfastApp.swift; sourceTree = "<group>"; };
+		8603D8E62B03C21600D124E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8603D8E82B03C21700D124E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8603D8EB2B03C21700D124E6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8603D8F12B03C21700D124E6 /* MedfastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedfastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8603D8F52B03C21700D124E6 /* MedfastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedfastTests.swift; sourceTree = "<group>"; };
+		8603D8FB2B03C21800D124E6 /* MedfastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedfastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8603D8FF2B03C21800D124E6 /* MedfastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedfastUITests.swift; sourceTree = "<group>"; };
+		8603D9012B03C21800D124E6 /* MedfastUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedfastUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8603D9182B04E4F800D124E6 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		8603D91B2B04F7A100D124E6 /* Texts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Texts.swift; sourceTree = "<group>"; };
+		8603D9222B052B6100D124E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		861D0B9E2B23226100B6D62E /* AbstractButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractButton.swift; sourceTree = "<group>"; };
+		861D0BA02B235DE000B6D62E /* AbstractButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractButtonViewModel.swift; sourceTree = "<group>"; };
+		864C4E0D2B19FB0000F3AAB2 /* AnimatedLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedLogo.swift; sourceTree = "<group>"; };
+		864C4E102B1A036200F3AAB2 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		8655FC952B20B80200FA0033 /* ValidatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorProtocol.swift; sourceTree = "<group>"; };
+		8655FC972B20BB0C00FA0033 /* PasswordValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordValidator.swift; sourceTree = "<group>"; };
+		8682CDC22B0E1CF90096494E /* EmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
+		869580A02B0FAD3600999FA2 /* AbstractTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractTextField.swift; sourceTree = "<group>"; };
+		869580A42B0FAD5B00999FA2 /* AbstractTextFieldViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractTextFieldViewModelProtocol.swift; sourceTree = "<group>"; };
+		869580A62B0FAD7A00999FA2 /* AbstractTextFieldStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractTextFieldStyles.swift; sourceTree = "<group>"; };
+		869580AA2B0FAE9700999FA2 /* ViewModelWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelWrapper.swift; sourceTree = "<group>"; };
+		869580AC2B0FAF3400999FA2 /* AbstractTextFieldImagesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractTextFieldImagesModel.swift; sourceTree = "<group>"; };
+		86A30C192B06A5D100D54984 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		86A30C1B2B06A75300D54984 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		86A30C202B06A93200D54984 /* MainButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtonType.swift; sourceTree = "<group>"; };
+		86A30C222B06AC8A00D54984 /* MainButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtonStyle.swift; sourceTree = "<group>"; };
+		86B12ECB2B1E08E400ED74BA /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		86D3F7062B165557002D9924 /* AbstractTextFieldViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractTextFieldViewModel.swift; sourceTree = "<group>"; };
+		86E6EFC42B27048A004BA8FF /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		86E6EFC62B271AFB004BA8FF /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		86EFCECC2B06129400BF5A84 /* Font+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extensions.swift"; sourceTree = "<group>"; };
+		86EFCECF2B0614C800BF5A84 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		86FD6C5F2B28E70D00344EF5 /* PageIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageIndicatorView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8603D8DE2B03C21600D124E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8603D8EE2B03C21700D124E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8603D8F82B03C21800D124E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8603D8D82B03C21600D124E6 = {
+			isa = PBXGroup;
+			children = (
+				8603D8E32B03C21600D124E6 /* Medfast */,
+				8603D8F42B03C21700D124E6 /* MedfastTests */,
+				8603D8FE2B03C21800D124E6 /* MedfastUITests */,
+				8603D8E22B03C21600D124E6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8603D8E22B03C21600D124E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8603D8E12B03C21600D124E6 /* Medfast.app */,
+				8603D8F12B03C21700D124E6 /* MedfastTests.xctest */,
+				8603D8FB2B03C21800D124E6 /* MedfastUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8603D8E32B03C21600D124E6 /* Medfast */ = {
+			isa = PBXGroup;
+			children = (
+				869580A92B0FAE8600999FA2 /* Utils */,
+				86A30C1D2B06A90B00D54984 /* UI */,
+				86A30C172B06A5AE00D54984 /* Flows */,
+				8603D8E42B03C21600D124E6 /* MedfastApp.swift */,
+				8603D8E62B03C21600D124E6 /* ContentView.swift */,
+				8603D8E82B03C21700D124E6 /* Assets.xcassets */,
+				8603D9232B052B6100D124E6 /* Localizable.strings */,
+				86EFCECB2B06126200BF5A84 /* Extensions */,
+				8603D9152B04E3EB00D124E6 /* Resources */,
+				8603D8EA2B03C21700D124E6 /* Preview Content */,
+			);
+			path = Medfast;
+			sourceTree = "<group>";
+		};
+		8603D8EA2B03C21700D124E6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8603D8EB2B03C21700D124E6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8603D8F42B03C21700D124E6 /* MedfastTests */ = {
+			isa = PBXGroup;
+			children = (
+				8603D8F52B03C21700D124E6 /* MedfastTests.swift */,
+			);
+			path = MedfastTests;
+			sourceTree = "<group>";
+		};
+		8603D8FE2B03C21800D124E6 /* MedfastUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8603D8FF2B03C21800D124E6 /* MedfastUITests.swift */,
+				8603D9012B03C21800D124E6 /* MedfastUITestsLaunchTests.swift */,
+			);
+			path = MedfastUITests;
+			sourceTree = "<group>";
+		};
+		8603D9152B04E3EB00D124E6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8603D9172B04E4ED00D124E6 /* Colors */,
+				8603D91A2B04F79300D124E6 /* Texts */,
+				86EFCECE2B0614A800BF5A84 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8603D9172B04E4ED00D124E6 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				8603D9182B04E4F800D124E6 /* Colors.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		8603D91A2B04F79300D124E6 /* Texts */ = {
+			isa = PBXGroup;
+			children = (
+				8603D91B2B04F7A100D124E6 /* Texts.swift */,
+			);
+			path = Texts;
+			sourceTree = "<group>";
+		};
+		861D0B9D2B231EBC00B6D62E /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				861D0B9E2B23226100B6D62E /* AbstractButton.swift */,
+				861D0BA02B235DE000B6D62E /* AbstractButtonViewModel.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		864C4E0C2B19FAEE00F3AAB2 /* AnimatedLogo */ = {
+			isa = PBXGroup;
+			children = (
+				864C4E0D2B19FB0000F3AAB2 /* AnimatedLogo.swift */,
+			);
+			path = AnimatedLogo;
+			sourceTree = "<group>";
+		};
+		864C4E0F2B1A035100F3AAB2 /* LoaderFlow */ = {
+			isa = PBXGroup;
+			children = (
+				864C4E102B1A036200F3AAB2 /* LoaderView.swift */,
+			);
+			path = LoaderFlow;
+			sourceTree = "<group>";
+		};
+		8655FC942B20B6D300FA0033 /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				8655FC952B20B80200FA0033 /* ValidatorProtocol.swift */,
+				8682CDC22B0E1CF90096494E /* EmailValidator.swift */,
+				8655FC972B20BB0C00FA0033 /* PasswordValidator.swift */,
+			);
+			path = Validator;
+			sourceTree = "<group>";
+		};
+		869580A92B0FAE8600999FA2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				869580AA2B0FAE9700999FA2 /* ViewModelWrapper.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		86A30C172B06A5AE00D54984 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				86E6EFC32B27046A004BA8FF /* Onboarding */,
+				8655FC942B20B6D300FA0033 /* Validator */,
+				864C4E0F2B1A035100F3AAB2 /* LoaderFlow */,
+				86A30C182B06A5BB00D54984 /* LoginFlow */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		86A30C182B06A5BB00D54984 /* LoginFlow */ = {
+			isa = PBXGroup;
+			children = (
+				86A30C1B2B06A75300D54984 /* LoginView.swift */,
+				86A30C192B06A5D100D54984 /* LoginViewModel.swift */,
+			);
+			path = LoginFlow;
+			sourceTree = "<group>";
+		};
+		86A30C1D2B06A90B00D54984 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				86B12ECA2B1E08CA00ED74BA /* DesingStyle */,
+				86A30C1E2B06A90F00D54984 /* Components */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		86A30C1E2B06A90F00D54984 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				861D0B9D2B231EBC00B6D62E /* Button */,
+				864C4E0C2B19FAEE00F3AAB2 /* AnimatedLogo */,
+				86A30C252B06C3D800D54984 /* AbstractTextField */,
+				86A30C1F2B06A91B00D54984 /* Buttons */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		86A30C1F2B06A91B00D54984 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				86A30C202B06A93200D54984 /* MainButtonType.swift */,
+				86A30C222B06AC8A00D54984 /* MainButtonStyle.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		86A30C252B06C3D800D54984 /* AbstractTextField */ = {
+			isa = PBXGroup;
+			children = (
+				869580A02B0FAD3600999FA2 /* AbstractTextField.swift */,
+				86D3F7062B165557002D9924 /* AbstractTextFieldViewModel.swift */,
+				869580A42B0FAD5B00999FA2 /* AbstractTextFieldViewModelProtocol.swift */,
+				869580A62B0FAD7A00999FA2 /* AbstractTextFieldStyles.swift */,
+				869580AC2B0FAF3400999FA2 /* AbstractTextFieldImagesModel.swift */,
+			);
+			path = AbstractTextField;
+			sourceTree = "<group>";
+		};
+		86B12ECA2B1E08CA00ED74BA /* DesingStyle */ = {
+			isa = PBXGroup;
+			children = (
+				86B12ECB2B1E08E400ED74BA /* Styles.swift */,
+			);
+			path = DesingStyle;
+			sourceTree = "<group>";
+		};
+		86E6EFC32B27046A004BA8FF /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				86E6EFC42B27048A004BA8FF /* OnboardingView.swift */,
+				86E6EFC62B271AFB004BA8FF /* OnboardingViewModel.swift */,
+				86FD6C5F2B28E70D00344EF5 /* PageIndicatorView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		86EFCECB2B06126200BF5A84 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				86EFCECC2B06129400BF5A84 /* Font+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		86EFCECE2B0614A800BF5A84 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				86EFCECF2B0614C800BF5A84 /* Images.swift */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8603D8E02B03C21600D124E6 /* Medfast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8603D9052B03C21800D124E6 /* Build configuration list for PBXNativeTarget "Medfast" */;
+			buildPhases = (
+				8603D8DD2B03C21600D124E6 /* Sources */,
+				8603D8DE2B03C21600D124E6 /* Frameworks */,
+				8603D8DF2B03C21600D124E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Medfast;
+			productName = Medfast;
+			productReference = 8603D8E12B03C21600D124E6 /* Medfast.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8603D8F02B03C21700D124E6 /* MedfastTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8603D9082B03C21800D124E6 /* Build configuration list for PBXNativeTarget "MedfastTests" */;
+			buildPhases = (
+				8603D8ED2B03C21700D124E6 /* Sources */,
+				8603D8EE2B03C21700D124E6 /* Frameworks */,
+				8603D8EF2B03C21700D124E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8603D8F32B03C21700D124E6 /* PBXTargetDependency */,
+			);
+			name = MedfastTests;
+			productName = MedfastTests;
+			productReference = 8603D8F12B03C21700D124E6 /* MedfastTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8603D8FA2B03C21800D124E6 /* MedfastUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8603D90B2B03C21800D124E6 /* Build configuration list for PBXNativeTarget "MedfastUITests" */;
+			buildPhases = (
+				8603D8F72B03C21800D124E6 /* Sources */,
+				8603D8F82B03C21800D124E6 /* Frameworks */,
+				8603D8F92B03C21800D124E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8603D8FD2B03C21800D124E6 /* PBXTargetDependency */,
+			);
+			name = MedfastUITests;
+			productName = MedfastUITests;
+			productReference = 8603D8FB2B03C21800D124E6 /* MedfastUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8603D8D92B03C21600D124E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					8603D8E02B03C21600D124E6 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					8603D8F02B03C21700D124E6 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 8603D8E02B03C21600D124E6;
+					};
+					8603D8FA2B03C21800D124E6 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 8603D8E02B03C21600D124E6;
+					};
+				};
+			};
+			buildConfigurationList = 8603D8DC2B03C21600D124E6 /* Build configuration list for PBXProject "Medfast" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8603D8D82B03C21600D124E6;
+			productRefGroup = 8603D8E22B03C21600D124E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8603D8E02B03C21600D124E6 /* Medfast */,
+				8603D8F02B03C21700D124E6 /* MedfastTests */,
+				8603D8FA2B03C21800D124E6 /* MedfastUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8603D8DF2B03C21600D124E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8603D8EC2B03C21700D124E6 /* Preview Assets.xcassets in Resources */,
+				8603D9212B052B6100D124E6 /* Localizable.strings in Resources */,
+				8603D8E92B03C21700D124E6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8603D8EF2B03C21700D124E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8603D8F92B03C21800D124E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8603D8DD2B03C21600D124E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86A30C232B06AC8A00D54984 /* MainButtonStyle.swift in Sources */,
+				8603D91C2B04F7A100D124E6 /* Texts.swift in Sources */,
+				8603D8E72B03C21600D124E6 /* ContentView.swift in Sources */,
+				869580A52B0FAD5B00999FA2 /* AbstractTextFieldViewModelProtocol.swift in Sources */,
+				86A30C212B06A93200D54984 /* MainButtonType.swift in Sources */,
+				8655FC982B20BB0C00FA0033 /* PasswordValidator.swift in Sources */,
+				861D0B9F2B23226100B6D62E /* AbstractButton.swift in Sources */,
+				869580AB2B0FAE9700999FA2 /* ViewModelWrapper.swift in Sources */,
+				869580A12B0FAD3600999FA2 /* AbstractTextField.swift in Sources */,
+				864C4E112B1A036200F3AAB2 /* LoaderView.swift in Sources */,
+				86EFCED02B0614C800BF5A84 /* Images.swift in Sources */,
+				869580A72B0FAD7A00999FA2 /* AbstractTextFieldStyles.swift in Sources */,
+				8682CDC32B0E1CF90096494E /* EmailValidator.swift in Sources */,
+				86B12ECC2B1E08E400ED74BA /* Styles.swift in Sources */,
+				86EFCECD2B06129400BF5A84 /* Font+Extensions.swift in Sources */,
+				864C4E0E2B19FB0000F3AAB2 /* AnimatedLogo.swift in Sources */,
+				86D3F7072B165557002D9924 /* AbstractTextFieldViewModel.swift in Sources */,
+				869580AD2B0FAF3400999FA2 /* AbstractTextFieldImagesModel.swift in Sources */,
+				86E6EFC52B27048A004BA8FF /* OnboardingView.swift in Sources */,
+				86FD6C602B28E70D00344EF5 /* PageIndicatorView.swift in Sources */,
+				86E6EFC72B271AFB004BA8FF /* OnboardingViewModel.swift in Sources */,
+				8603D9192B04E4F800D124E6 /* Colors.swift in Sources */,
+				8655FC962B20B80200FA0033 /* ValidatorProtocol.swift in Sources */,
+				861D0BA12B235DE000B6D62E /* AbstractButtonViewModel.swift in Sources */,
+				8603D8E52B03C21600D124E6 /* MedfastApp.swift in Sources */,
+				86A30C1C2B06A75300D54984 /* LoginView.swift in Sources */,
+				86A30C1A2B06A5D100D54984 /* LoginViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8603D8ED2B03C21700D124E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8603D8F62B03C21700D124E6 /* MedfastTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8603D8F72B03C21800D124E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8603D9002B03C21800D124E6 /* MedfastUITests.swift in Sources */,
+				8603D9022B03C21800D124E6 /* MedfastUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8603D8F32B03C21700D124E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8603D8E02B03C21600D124E6 /* Medfast */;
+			targetProxy = 8603D8F22B03C21700D124E6 /* PBXContainerItemProxy */;
+		};
+		8603D8FD2B03C21800D124E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8603D8E02B03C21600D124E6 /* Medfast */;
+			targetProxy = 8603D8FC2B03C21800D124E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8603D9232B052B6100D124E6 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8603D9222B052B6100D124E6 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8603D9032B03C21800D124E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8603D9042B03C21800D124E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8603D9062B03C21800D124E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Medfast/Preview Content\"";
+				DEVELOPMENT_TEAM = X37P6X4JLS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Vlad.Medfast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8603D9072B03C21800D124E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Medfast/Preview Content\"";
+				DEVELOPMENT_TEAM = X37P6X4JLS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Vlad.Medfast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8603D9092B03C21800D124E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X37P6X4JLS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Vlad.MedfastTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Medfast.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Medfast";
+			};
+			name = Debug;
+		};
+		8603D90A2B03C21800D124E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X37P6X4JLS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Vlad.MedfastTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Medfast.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Medfast";
+			};
+			name = Release;
+		};
+		8603D90C2B03C21800D124E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X37P6X4JLS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Vlad.MedfastUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Medfast;
+			};
+			name = Debug;
+		};
+		8603D90D2B03C21800D124E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X37P6X4JLS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Vlad.MedfastUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Medfast;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8603D8DC2B03C21600D124E6 /* Build configuration list for PBXProject "Medfast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8603D9032B03C21800D124E6 /* Debug */,
+				8603D9042B03C21800D124E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8603D9052B03C21800D124E6 /* Build configuration list for PBXNativeTarget "Medfast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8603D9062B03C21800D124E6 /* Debug */,
+				8603D9072B03C21800D124E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8603D9082B03C21800D124E6 /* Build configuration list for PBXNativeTarget "MedfastTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8603D9092B03C21800D124E6 /* Debug */,
+				8603D90A2B03C21800D124E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8603D90B2B03C21800D124E6 /* Build configuration list for PBXNativeTarget "MedfastUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8603D90C2B03C21800D124E6 /* Debug */,
+				8603D90D2B03C21800D124E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8603D8D92B03C21600D124E6 /* Project object */;
+}
